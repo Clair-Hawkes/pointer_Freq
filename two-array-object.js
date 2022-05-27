@@ -18,14 +18,24 @@
 
 function twoArrayObject(keys, values) {
     const keysAndValues = {};
+
     for(let i = 0; i < keys.length; i++) {
-        keysAndValues[keys[i]] = values[i];
+        keysAndValues[keys[i]] = (values[i] || null)
     }
-    for(let objKey in keysAndValues) {
-        if(keysAndValues[objKey] === undefined) {
-            keysAndValues[objKey] = null;
-        }
-    }
+    // for(let objKey in keysAndValues) {
+    //     if(keysAndValues[objKey] === undefined) {
+    //         keysAndValues[objKey] = null;
+    //     }
+    // }
     return keysAndValues;
 }
+
+// function twoArrayObject(keys, values) {
+//     const keysAndValues = {}
+
+//     for(let i = 0; i < keys.length; i++) {
+
+//     }
+
+// }
 
