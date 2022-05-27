@@ -30,7 +30,7 @@ function frequencyCounter(array) {
         if(counter[array[i]] === undefined) {
             counter[array[i]] = 1
         } else {
-            counter[array[i]] ++;
+            counter[array[i]]++;
         }
     }
     return counter;
